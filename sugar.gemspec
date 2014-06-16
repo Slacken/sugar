@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sugar/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sugar"
+  spec.name          = "chinese_sugar"
   spec.version       = Sugar::VERSION
   spec.authors       = ["binz"]
   spec.email         = ["xinkiang@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Chinese text data mining.}
+  spec.description   = %q{1.Chinese words segmentation using Trie and Viterbi}
+  spec.homepage      = "https://github.com/slacken/sugar"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
