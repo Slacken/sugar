@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["binz"]
   spec.email         = ["xinkiang@gmail.com"]
   spec.summary       = %q{Chinese text data mining.}
-  spec.description   = %q{1.Chinese words segmentation using Trie and Viterbi}
+  spec.description   = %q{1.Chinese words segmentation using Trie and Viterbi;}
   spec.homepage      = "https://github.com/slacken/sugar"
   spec.license       = "MIT"
 
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
 end
