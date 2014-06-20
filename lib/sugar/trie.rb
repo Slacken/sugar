@@ -6,7 +6,7 @@ module Sugar
     attr_accessor :trie, :frequnces, :count
 
     def initialize
-      dict = File.expand_path("../../dict.txt", __FILE__)
+      dict = File.expand_path("../../data/phrase.txt", __FILE__)
       self.trie, self.frequnces, self.count = Sugar::Trie.build(dict)
     end
 
