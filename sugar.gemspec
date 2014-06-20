@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["binz"]
   spec.email         = ["xinkiang@gmail.com"]
   spec.summary       = %q{Chinese text data mining.}
-  spec.description   = %q{1.Chinese words segmentation using Trie and Viterbi;}
+  spec.description   = %q{1.Chinese words segmentation using Trie and Viterbi; 2.Chinese to pinyin}
   spec.homepage      = "https://github.com/slacken/sugar"
   spec.license       = "MIT"
 
