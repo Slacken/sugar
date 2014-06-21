@@ -9,14 +9,14 @@ class Domain
   def double(&condition)
     pinyins = @pinyin.pinyins
     params = {}
-    condition = ->(a, b){ (a+b).length <= 7 } if condition.nil?
+    condition = ->(a, b){ (a+b).length <= 6 && (a+b).length >= 4 } if condition.nil?
     pinyins.product(pinyins).uniq.each do |a, b|
       if condition.call(a,b)
         params[a+b+".com"] = {name: a+b}
       end
     end
 
-    result = ApiAccess.batch_post('http://www.qiuyumi.org/query/whois.com.php', params, 10)
+    result = ApiAccess.batch_post('http://www.qiuyumi.org/query/whois.com.php', params, 50)
     result.select{|k, v| v['available']}.keys
   end
 
